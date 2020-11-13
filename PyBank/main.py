@@ -3,10 +3,10 @@ import os
 import csv
 
 # Set path for file
-csvpath = os.path.join("..", "Resources", "budget_data.csv")
+csvpath = os.path.join("Resources", "budget_data.csv")
 
 # Set the output of the text file
-text_path = ('..Analysis/finanalysis.txt')
+text_path = ('Analysis/finanalysis.txt')
 
 #Set variables
 sum_profit = 0

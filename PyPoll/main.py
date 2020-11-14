@@ -1,21 +1,19 @@
-# import modules
+# Import modules
 import os
 import csv
 
-# set path for file
+# Set path for file
 csvpath = os.path.join("Resources", "election_data.csv")
 
-# set the output of the text  file
+# Set the output of the text  file
 text_path = ('Analysis/election_analysis.txt')
 
-# set variables
+# Set variables
 total_votes = 0
 candidates = []
 candidate_votes = []
-winning_candidate = ""
-winning_count = 0
 
-# open the csv file
+# Open the csv file
 with open(csvpath, newline="") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     header = next(csvreader)
@@ -34,7 +32,7 @@ with open(csvpath, newline="") as csvfile:
             candidates.append(candidate_in)
             candidate_votes.append(1)
 
-        
+# Calculate the percentage of votes for each candidate        
 pct = []
 max_votes = candidate_votes[0]
 max_index = 0

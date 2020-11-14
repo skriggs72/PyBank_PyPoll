@@ -8,17 +8,12 @@ csvpath = os.path.join("Resources", "budget_data.csv")
 # Set the output of the text file
 text_path = ('Analysis/finanalysis.txt')
 
-#Set variables
+# Set variables
 sum_profit = 0
 sum_loss = 0
 revenue = 0
 profit = 0
 monthly_profit_change = []
-revenue_change = 0
-previous_revenue = 0
-greatest_increase = ["", 0]
-greatest_decrease = ["", 9999999]
-revenue_average = 0
 total_profit = []
 listofdates = []
 
